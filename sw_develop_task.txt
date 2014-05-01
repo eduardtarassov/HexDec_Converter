@@ -1,0 +1,29 @@
+Create a program which converts hexadecimal numbers into decimal representation and vice versa.
+
+
+Prerequisites
+1)hexadecimal number is a string with prefix '0x'
+
+Example: 0xFF; 0x102c
+
+2)all strings not having prefix '0x' are treated as decimal numbers
+
+
+Requirements:
+1)program name: HexDec_Converter
+2)input:
+- is given by user directly
+- is read from file, when program is started with parameter like this: HexDec_Converter -i<file path>
+Note: if full path is not given, then file is expected to be in current folder
+3)input form:
+- input can contain 1-n values, separators are " " or "," or ";" or CR (line break)
+- hexadecimal and decimal values can be both in the same string
+
+Example: 0xAC, 23456; 0x12 345
+  125, 89
+
+4)output:
+- output is table including 2 columns: "input value" and "output value"
+- if input is not valid, then in output column there is a text: "is not valid hexadecimal value" or "is not valid decimal value"
+- output is printed directly to the user interface or to the file  when executed with parameter HexDec_Converter -o<file path>, 
+  note: output file should not overwrite input file
